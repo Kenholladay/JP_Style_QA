@@ -1,9 +1,9 @@
 language: node_js
-
-# test on two node.js versions: 0.6 and 0.8
 node_js:
   - 0.8
 
-# configure notifications (email, IRC, campfire etc)
-# please update this section to your needs!
-after_success: "curl --request POST --url https://api.observepoint.com/v2/web-audits/31638/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
+after_success: 
+  - "curl --request POST --url https://api.observepoint.com/v2/web-audits/31638/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
+  - "curl --request POST --url https://api.observepoint.com/v2/web-journeys/11609/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
+  - "curl --request POST --url https://api.observepoint.com/v2/web-journeys/11610/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
+  - "curl --request POST --url https://api.observepoint.com/v2/web-journeys/11613/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
