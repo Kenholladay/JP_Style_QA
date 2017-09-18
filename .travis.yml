@@ -7,6 +7,4 @@ node_js:
 
 # configure notifications (email, IRC, campfire etc)
 # please update this section to your needs!
-notifications:
-  irc: "irc.freenode.org#travis"
-
+after_success: "curl --request POST --url https://api.observepoint.com/v2/web-audits/31638/runs --header 'authorization: api_key Z3A5ZmozZXRsYm51MHJsZXZlOXFiNXMxOG1rZnAzMmc4dWk0bjMwdWVpcmRoY2Jza3BmYnM4aTcwMCY1MDM3JjE1MDQ2MzcyOTA2NjI' --header 'content-type: application/json'"
