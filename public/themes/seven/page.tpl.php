@@ -1,6 +1,6 @@
 
   <div id="branding" class="clearfix">
-    <?php print $martech2: ?>
+    <?php print $martech3: ?>
     <?php print $breadcrumb; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
